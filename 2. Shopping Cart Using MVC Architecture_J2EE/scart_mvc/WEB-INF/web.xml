@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+	
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/view/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+<!--  ===============================JSP File START==========================================    -->
+	 <servlet>
+		<servlet-name>index</servlet-name>
+		<jsp-file>/WEB-INF/view/index.jsp</jsp-file>
+	  </servlet>
+
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>lastAccessTime</servlet-name>
+		<jsp-file>/WEB-INF/view/ShowSession.jsp</jsp-file>
+	  </servlet>
+
+    <servlet-mapping>
+        <servlet-name>lastAccessTime</servlet-name>
+        <url-pattern>/lastAccessTime</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>cart</servlet-name>
+		<jsp-file>/WEB-INF/view/CartProcess.jsp</jsp-file>
+	  </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+	
+    <servlet>
+		<servlet-name>check</servlet-name>
+		<jsp-file>/WEB-INF/view/Check.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>check</servlet-name>
+		<url-pattern>/check</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>cartList</servlet-name>
+      	<jsp-file>/WEB-INF/view/CartList.jsp</jsp-file>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>cartList</servlet-name>
+		<url-pattern>/cartList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>r1</servlet-name>
+      	<jsp-file>/WEB-INF/view/Reg1.jsp</jsp-file>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>r1</servlet-name>
+		<url-pattern>/r1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>r2</servlet-name>
+      	<jsp-file>/WEB-INF/view/Reg2.jsp</jsp-file>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>r2</servlet-name>
+		<url-pattern>/r2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>r3</servlet-name>
+      	<jsp-file>/WEB-INF/view/Reg3.jsp</jsp-file>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>r3</servlet-name>
+		<url-pattern>/r3</url-pattern>
+	</servlet-mapping>
+	
+<!--  ===============================JSP File END============================================   -->
+	
+<!-- ================================Servlet START===========================================   -->
+	
+	<servlet>
+		<servlet-name>captcha</servlet-name>
+		<servlet-class>helper.CaptchaServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>captcha</servlet-name>
+		<url-pattern>/helper/captcha</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>controller.login.LoginController</servlet-class>
+	</servlet>
+    
+    <servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/loginController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>helper.Logout</servlet-class>
+	</servlet>
+    
+    <servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>con</servlet-name>
+      	<servlet-class>controller.registration.RegController</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>con</servlet-name>
+		<url-pattern>/con</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      	<servlet-name>finalReg</servlet-name>
+      	<servlet-class>controller.registration.FinalRegistration</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>finalReg</servlet-name>
+		<url-pattern>/finalReg</url-pattern>
+	</servlet-mapping>
+	
+<!-- ================================Servlet END=============================================   -->
+	
+	
+</web-app>
