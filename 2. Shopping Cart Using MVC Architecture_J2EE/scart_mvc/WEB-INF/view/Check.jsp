@@ -26,20 +26,7 @@
 	  pro.add(s1);
 	  session.setAttribute("cart" , pro);
 	}
-     
-    //System.out.println("Product Name: "+s1);
-     
- /*   try
-    {
-    String sql = "SELECT * FROM cartlist where ProductName="+s1;
-    rs = DatabaseTable.query(sql);
-    }
-     
-    catch(Exception e)
-    {
-    out.println(e.getMessage() );
-    }
-*/
+    
      
     %>
      
